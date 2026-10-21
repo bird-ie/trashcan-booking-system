@@ -1,0 +1,409 @@
+/* Postcode Checker */
+.tbs-postcode-checker {
+	max-width: 720px;
+	margin: 30px auto;
+}
+
+.tbs-checker-box {
+	background: #ffffff;
+	border: 1px solid #e5e7eb;
+	border-radius: var(--tbs-radius);
+	padding: 24px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.tbs-checker-box h3 {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.tbs-field-group {
+	margin-bottom: 16px;
+}
+
+.tbs-field-group label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 6px;
+}
+
+.tbs-field-group input,
+.tbs-field-group textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #d0d0d0;
+	border-radius: var(--tbs-radius);
+	box-sizing: border-box;
+}
+
+.tbs-field-row {
+	display: grid;
+	grid-template-columns: 1fr 160px;
+	gap: 14px;
+}
+
+#tbs_check_postcode_btn,
+#tbs_continue_to_checkout_btn,
+.tbs-select-route-btn {
+	background: var(--tbs-primary);
+	color: #ffffff;
+	border: none;
+	border-radius: var(--tbs-radius);
+	padding: 12px 18px;
+	cursor: pointer;
+	font-weight: 600;
+	transition: opacity 0.2s ease;
+}
+
+#tbs_check_postcode_btn:hover,
+#tbs_continue_to_checkout_btn:hover,
+.tbs-select-route-btn:hover {
+	opacity: 0.9;
+}
+
+#tbs_postcode_result,
+#tbs_booking_form_message {
+	margin-top: 18px;
+	padding: 14px;
+	border-radius: var(--tbs-radius);
+	display: none;
+}
+
+#tbs_postcode_result.tbs-success,
+#tbs_postcode_result.tbs-error,
+#tbs_booking_form_message.tbs-success,
+#tbs_booking_form_message.tbs-error {
+	display: block;
+}
+
+#tbs_postcode_result.tbs-success,
+#tbs_booking_form_message.tbs-success {
+	background: #ecfdf3;
+	border: 1px solid var(--tbs-secondary);
+	color: #166534;
+}
+
+#tbs_postcode_result.tbs-error,
+#tbs_booking_form_message.tbs-error {
+	background: #fef2f2;
+	border: 1px solid #fecaca;
+	color: #991b1b;
+}
+
+.tbs-route-options {
+	margin-top: 16px;
+}
+
+.tbs-route-option {
+	background: rgba(255, 255, 255, 0.75);
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	border-radius: var(--tbs-radius);
+	padding: 14px;
+	margin-top: 10px;
+}
+
+.tbs-route-option .tbs-select-route-btn {
+	margin-top: 12px;
+}
+
+.tbs-booking-form-wrap {
+	margin-top: 24px;
+}
+
+.tbs-selected-summary {
+	background: #f8fafc;
+	border: 1px solid #e2e8f0;
+	border-radius: var(--tbs-radius);
+	padding: 14px;
+	margin-bottom: 18px;
+}
+
+/* Customer Dashboard */
+.tbs-dashboard-wrap {
+	max-width: 900px;
+	margin: 40px auto;
+	font-family: sans-serif;
+}
+
+.tbs-dashboard-credits-card {
+	background: var(--tbs-primary);
+	color: #fff;
+	padding: 24px;
+	border-radius: var(--tbs-radius);
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.tbs-dashboard-credits-card h2 {
+	margin: 0;
+	font-size: 18px;
+	color: #d1d5db; /* Light text for readability */
+}
+
+.tbs-dashboard-credits-card .tbs-credit-count {
+	font-size: 48px;
+	font-weight: 800;
+	margin-top: 8px;
+}
+
+.tbs-dashboard-section {
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	padding: 24px;
+	border-radius: var(--tbs-radius);
+	margin-bottom: 24px;
+}
+
+.tbs-dashboard-section h3 {
+	margin-top: 0;
+}
+
+.tbs-address-card {
+	border: 1px solid #e5e7eb;
+	padding: 14px;
+	border-radius: var(--tbs-radius);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tbs-address-card strong {
+	font-size: 16px;
+}
+
+.tbs-delete-address {
+	background: #ef4444;
+	color: #fff;
+	border: none;
+	padding: 8px 12px;
+	border-radius: var(--tbs-radius);
+	cursor: pointer;
+}
+
+.tbs-add-address-form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 12px;
+}
+
+.tbs-add-address-form input {
+	padding: 10px;
+	border: 1px solid #d1d5db;
+	border-radius: var(--tbs-radius);
+}
+
+.tbs-add-address-form button {
+	grid-column: 1 / -1;
+	background: var(--tbs-primary);
+	color: #fff;
+	border: none;
+	padding: 12px;
+	border-radius: var(--tbs-radius);
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.tbs-bookings-table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+.tbs-bookings-table th {
+	padding: 10px 0;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+.tbs-bookings-table td {
+	padding: 10px 0;
+	border-bottom: 1px solid #f3f4f6;
+}
+
+.tbs-status-badge {
+	background: #ecfdf3;
+	color: #166534;
+	padding: 4px 8px;
+	border-radius: var(--tbs-radius);
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.tbs-report-btn {
+	background: var(--tbs-accent);
+	color: #fff;
+	border: none;
+	padding: 6px 10px;
+	border-radius: var(--tbs-radius);
+	cursor: pointer;
+	font-size: 12px;
+}
+
+/* Worker Portal */
+.tbs-worker-dashboard {
+	max-width: 900px;
+	margin: 40px auto;
+	font-family: sans-serif;
+}
+
+.tbs-route-card {
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	border-radius: var(--tbs-radius);
+	padding: 24px;
+	margin-bottom: 24px;
+	box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+.tbs-route-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #e5e7eb;
+	padding-bottom: 12px;
+	margin-bottom: 16px;
+}
+
+.tbs-route-header h2 {
+	margin: 0;
+	font-size: 20px;
+}
+
+.tbs-route-status {
+	background: #e0f2fe;
+	color: #0369a1;
+	padding: 4px 8px;
+	border-radius: var(--tbs-radius);
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.tbs-job-card {
+	border: 1px solid #e5e7eb;
+	border-radius: var(--tbs-radius);
+	padding: 16px;
+	background: #f9fafb;
+	margin-bottom: 16px;
+}
+
+.tbs-job-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tbs-job-status-completed {
+	color: #166534;
+	font-weight: bold;
+	background: #ecfdf3;
+	padding: 4px 8px;
+	border-radius: var(--tbs-radius);
+}
+
+.tbs-job-status-progress {
+	color: #b45309;
+	font-weight: bold;
+	background: #fffbeb;
+	padding: 4px 8px;
+	border-radius: var(--tbs-radius);
+}
+
+.tbs-start-job-btn {
+	background: var(--tbs-primary);
+	color: #fff;
+	border: none;
+	padding: 8px 12px;
+	border-radius: var(--tbs-radius);
+	cursor: pointer;
+}
+
+.tbs-job-form {
+	margin-top: 16px;
+	border-top: 1px solid #e5e7eb;
+	padding-top: 16px;
+}
+
+.tbs-job-form h4 {
+	margin-top: 0;
+}
+
+.tbs-job-form .tbs-file-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 12px;
+}
+
+.tbs-job-form .tbs-checkbox-grid {
+	margin-top: 12px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8px;
+}
+
+.tbs-job-form textarea {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #d1d5db;
+	border-radius: var(--tbs-radius);
+}
+
+.tbs-complete-job-btn {
+	margin-top: 12px;
+	background: var(--tbs-secondary);
+	color: #fff;
+	border: none;
+	padding: 10px 16px;
+	border-radius: var(--tbs-radius);
+	cursor: pointer;
+	font-weight: bold;
+	width: 100%;
+}
+
+/* Report Modal */
+.tbs-modal-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 9999;
+	align-items: center;
+	justify-content: center;
+}
+
+.tbs-modal-content {
+	background: #fff;
+	width: 90%;
+	max-width: 600px;
+	padding: 24px;
+	border-radius: var(--tbs-radius);
+	position: relative;
+	max-height: 90vh;
+	overflow-y: auto;
+	margin: 5vh auto;
+}
+
+.tbs-modal-close {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	background: #ef4444;
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+@media (max-width: 600px) {
+	.tbs-field-row {
+		grid-template-columns: 1fr;
+	}
+	.tbs-add-address-form,
+	.tbs-job-form .tbs-file-grid,
+	.tbs-job-form .tbs-checkbox-grid {
+		grid-template-columns: 1fr;
+	}
+}
