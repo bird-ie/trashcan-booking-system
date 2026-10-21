@@ -4,6 +4,28 @@ A comprehensive, custom WordPress plugin built to manage trashcan cleaning booki
 
 Built from scratch using **OOP PHP**, **WooCommerce**, **AJAX**, and **Custom Post Types**.
 
+---
+
+## 🎯 The Business Problem
+
+Independent trashcan cleaning businesses often rely on manual processes to run their operations:
+*   **Scattered Bookings:** Managing bookings via WhatsApp and email forces owners to manually cross-reference postcodes, routes, and pricing.
+*   **Route Inefficiency:** Without a centralized system, owners struggle to group bookings into efficient geographical routes.
+*   **Payment Friction:** Handling one-time payments and recurring cleaning plans manually is error-prone.
+*   **No Field Documentation:** Workers have no way to prove they completed a job (e.g., before/after photos, hygiene checklists), leading to customer disputes.
+*   **Lack of Customer Transparency:** Customers have no self-service portal to view their history or manage their addresses.
+
+## 💡 The Solution
+
+This plugin digitizes the entire business operation:
+*   **Automated Booking Wizard:** Location-based pricing, route selection, and WooCommerce integration.
+*   **Admin Operations:** Create geographic routes, set capacities, and assign workers.
+*   **Worker Portal:** Workers see their assigned routes, update job statuses, upload before/after photos, and complete hygiene checklists.
+*   **Customer Dashboard:** Self-service portal for managing credits, saved addresses, and viewing service reports.
+*   **Standalone Setup:** Auto-creates pages, roles, and WooCommerce products upon activation.
+
+---
+
 ## 🚀 Features
 
 ### Customer Booking Flow
